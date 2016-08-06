@@ -19,9 +19,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{237964D7-DC36-4B01-9EDC-6115F98EF46E}</ProjectGuid>
+    <ProjectGuid>{A0F0E714-56D2-4542-84EF-CABAF101FCE0}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>p1</RootNamespace>
+    <RootNamespace>p5</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -146,7 +146,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="p1.cpp" />
+    <ClCompile Include="p5.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

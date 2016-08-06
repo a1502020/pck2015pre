@@ -1,5 +1,6 @@
 
 #include <iostream>
+#include <utility>
 
 using namespace std;
 
@@ -18,15 +19,11 @@ int root(int i) {
 int merge(int i, int j) {
 	int a = root(i), b = root(j);
 	if (a == b) return a;
-	if (sz[a] < sz[b]) {
-		pa[a] = b;
-		sz[b] += sz[a];
-		return b;
-	} else {
-		pa[b] = a;
-		sz[a] += sz[b];
-		return a;
-	}
+	if (sz[a] < sz[b]) swap(a, b);
+	pa[b] = a;
+	if (club[a] == -1) club[a] = club[b];
+	sz[a] += sz[b];
+	return a;
 }
 
 int main() {
